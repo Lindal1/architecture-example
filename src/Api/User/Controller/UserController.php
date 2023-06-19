@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Api\Controller;
+namespace App\Api\User\Controller;
 
-use App\Api\Dto\UserCreateRequest;
-use App\Api\Service\UserCreateService;
+use App\Api\User\Dto\UserCreateRequest;
+use App\Api\User\Service\UserCreateService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

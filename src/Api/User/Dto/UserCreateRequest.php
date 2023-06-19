@@ -1,11 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Api\Dto;
+namespace App\Api\User\Dto;
 
-use App\Domain\Interface\UserInterface;
 
-class UserCreateRequest implements UserInterface
+use App\Domain\User\Interface\UserCreateCommandInterface;
+
+class UserCreateRequest implements UserCreateCommandInterface
 {
     public function __construct(
         public ?string $email,
@@ -25,4 +26,8 @@ class UserCreateRequest implements UserInterface
         return $this->name;
     }
 
+    public function getPassword(): string
+    {
+        return $this->password;
+    }
 }

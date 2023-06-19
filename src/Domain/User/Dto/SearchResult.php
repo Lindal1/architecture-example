@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Domain\Dto;
+namespace App\Domain\User\Dto;
 
-use App\Domain\Interface\SearchResultInterface;
+use App\Domain\User\Interface\SearchResultInterface;
 
 class SearchResult implements SearchResultInterface
 {

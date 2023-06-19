@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Domain\Entity;
+namespace App\Domain\User\Entity;
 
-use App\Domain\Interface\UserInterface;
+use App\Domain\User\Interface\UserInterface;
 
 class User implements UserInterface
 {

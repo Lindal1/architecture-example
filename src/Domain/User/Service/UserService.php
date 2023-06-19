@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Domain\Service;
+namespace App\Domain\User\Service;
 
-use App\Domain\Dto\SearchResult;
 use App\Domain\Dto\UserSearchFilter;
-use App\Domain\Entity\User;
-use App\Domain\Interface\UserCreateCommandInterface;
-use App\Domain\Interface\UserCreateInterface;
-use App\Domain\Interface\UserFetchInterface;
-use App\Domain\Interface\UserInterface;
-use App\Domain\Interface\UserSearchFilterInterface;
-use App\Domain\Interface\UserSearchInterface;
+use App\Domain\User\Dto\SearchResult;
+use App\Domain\User\Entity\User;
+use App\Domain\User\Interface\UserCreateCommandInterface;
+use App\Domain\User\Interface\UserCreateInterface;
+use App\Domain\User\Interface\UserFetchInterface;
+use App\Domain\User\Interface\UserInterface;
+use App\Domain\User\Interface\UserSearchFilterInterface;
+use App\Domain\User\Interface\UserSearchInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 
